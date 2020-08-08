@@ -47,11 +47,11 @@ with open(VPN_FILE) as file:						# start reading openvpn status file
     match = False
     city = "Location Disabled"
     for line in file:
-        if re.match(START_PATTERN, line):				# if find the first pattern in the file, open temp file
+        if re.match(START_PATTERN, line):				# if finds the first pattern in the file, start a temp file
             match = True
             tempfile = open(TEMP_FILE, 'w')
             continue
-        elif re.match(END_PATTERN, line):				# if find closing pattern, override tempfile to output file
+        elif re.match(END_PATTERN, line):				# if finds closing pattern, override tempfile to output file
             match = False
             tempfile.close()
             os.rename(TEMP_FILE,OUTPUT_FILE)
