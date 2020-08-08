@@ -8,7 +8,7 @@
    modify it under the terms of the GNU General Public License<br/>
    version 2 as published by the Free Software Foundation.<br/>
 
-   Dependencies: 
+   Dependencies: <br/>
     - ipapi - geolocation, carefull that they have a limit for free use<br/>
     - ifttt_webhook - calls for ifttt<br/>
     - tested on python 3.6<br/>
