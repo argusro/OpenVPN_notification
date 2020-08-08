@@ -8,11 +8,10 @@
    modify it under the terms of the GNU General Public License
    version 2 as published by the Free Software Foundation.
 
-   Dependencies: ipapi - geolocation, carefull that they have a limit for free use
-   
-		 ifttt_webhook - calls for ifttt
-		 
-                 tested on python 3.6
+   Dependencies: 
+    - ipapi - geolocation, carefull that they have a limit for free use
+    - ifttt_webhook - calls for ifttt
+    - tested on python 3.6
 
    Use: manual ./connected_clients
    Create a cron entry to call script every minute for example.
